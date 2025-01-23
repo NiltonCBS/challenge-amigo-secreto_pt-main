@@ -79,6 +79,51 @@ body {
     margin-top: 20px;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+thead th {
+    background-color: var(--color-primary); /* Cor de fundo do cabeçalho */
+    color: white;
+    padding: 12px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Listras alternadas nas linhas */
+}
+
+td, th {
+    border: 1px solid #ddd; /* Bordas da tabela */
+    padding: 8px;
+}
+
+input[type="button"] {
+    padding: 8px 12px;
+    margin: 2px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.update:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+    color: white;
+}
+
+.remove:hover {
+    background-color: #a80202; /* Cor de fundo ao passar o mouse */
+    color: white;
+}
+
+
 .input-name {
     width: 100%;
     padding: 10px;
@@ -132,6 +177,7 @@ ul {
     font-family: "Inter", sans-serif;
     font-size: 18px;
     margin: 20px 0;
+    width: 40%;
 }
 
 .result-list {
