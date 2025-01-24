@@ -74,3 +74,16 @@ function editar(index) {
     nomeInput.value = nomeParaEditar;
     nomeInput.setAttribute('data-edit-index', index);
 }
+
+function sortearAmigo() {
+    if (amigos.length === 0) {
+        alert('Não há amigos para sortear.');
+        return;
+    }
+
+    let indiceAleatorio = Math.floor(Math.random() * amigos.length);
+    let amigoSorteado = amigos[indiceAleatorio];
+    
+    const sorteado = document.getElementById('resultado');
+    sorteado.innerHTML = `Amigo sorteado: ${amigoSorteado}`;
+}
